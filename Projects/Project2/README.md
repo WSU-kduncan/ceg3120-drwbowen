@@ -10,7 +10,7 @@
 
 - once you set up your Discord app and bot, you will need to place the API key into a file called .env, this file is stored in the same directory that the bot.py file is stored. you then will copy the bot token, by clicking the copy token from the developer portal under "bot token", and paste your token in your .env file like this: DISCORD_TOKEN=your bot token here. 
 - you will also need to add the guild name that your bot is a member of, to your .env file. to do this you add DISCORD_GUILD=your guild name.
-- also ensure that in your main repo you have a .gitignore file with a realitive path to your .env file, this will ensure that you aren't putting your bots keys on github. If your bots key get exposed, Discord will revoke the key and your bot will not work anymore. 
+- also ensure that in your main repo you have a .gitignore file with a realitive path to your .env file, this will ensure that you aren't putting your bots keys on github. If your bots key get exposed, Discord will revoke the key and your bot will not work anymore and you will have to go back to the developent portal to create a new token.
 
 ## PYTHON REQUIRMENTS
 - In order for this bot to work I had to install a few things into my lacal and aws systems they are listed below:
