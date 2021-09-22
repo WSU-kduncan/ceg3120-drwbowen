@@ -38,16 +38,16 @@ async def on_message(message):
         ),
     ]
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
+    red_vs_blue_quotes = [
+        'We need you to go to the store and get two quarts of elbow grease.',
+        'Time is not made out of lines. It is made out of circles; that is why clocks are round.',
+        'I am not gonna say I love you....I am gonna say I forget you.',
+        'Never say goodbye. If you don’t say goodbye you aren’t really gone. You just aren’t here right now.',
     ]
 
-    if message.content == 'towel!':
+    if message.content == 'red!':
         #response = random.choice(brooklyn_99_quotes)
-        response = random.choice(hitchhiker_quotes)
+        response = random.choice(red_vs_blue_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
