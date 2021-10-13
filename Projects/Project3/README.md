@@ -2,7 +2,7 @@
 
 ## PART 1
 - 1-VPC
-    - A VPC is a virtual private cloud, this allows us to create a cloud based service to run in our AWS instances.
+    - A VPC is a virtual private cloud, this allows us to create a cloud based service to run in our AWS instances. Or as it was described to us in class as a box that holds everything from the subnet, the internet gateway, the routing table, and the security group. everything that you need to operate a cloud based service.
 - screenshot of my VPC creation: 
 ![VPCCreated](images/VPCCreated.PNG)
 - 2- Subnet
@@ -12,9 +12,10 @@
     - the internet gateway is what allows this VPS to be connected to the internet
 ![Gw](images/GW.png)
 - 4- Route Table
-    - the route table is 
+    - the route table is just the rules that directs the traffic on the network.
 ![RT](images/RT.png)
-- 5-
+- 5- Security Group
+    - this is set up to tell the VPC what sources are trusted, and can have access to the VPC. Like with this project I specified that my home IP address, Wright States IP address and other services inside the VPC will be able to SSH in.
 ![SG](images/SG.png)
 
 ## PART 2
