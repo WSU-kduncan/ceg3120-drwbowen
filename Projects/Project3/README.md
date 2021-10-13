@@ -1,9 +1,12 @@
 # MY PROJECT 3
 
 ## PART 1
-- 1-
+- 1-VPC
+    - A VPC is a virtual private cloud, this allows us to create a cloud based service to run in our AWS instances.
+- screenshot of my VPC creation: 
 ![VPCCreated](images/VPCCreated.PNG)
-- 2- 
+- 2- Subnet
+    - THe subnet is what gives the range of IP address that are allowed to be used on this VPC
 ![subnet](images/subnet.png)
 - 3-
 ![Gw](images/GW.png)
