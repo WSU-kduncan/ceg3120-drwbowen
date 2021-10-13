@@ -4,4 +4,8 @@
 - 1-
 ![VPCCreated](VPCCreated.PNG)
 - 2- 
-![SubNetCreated](subNetCreat.PNG)
+![subnet](subNetCreate.png)
+- 3-
+![Gw](GW.png)
+- 4-
+![RT](RT.png)
