@@ -2,12 +2,12 @@
 
 ## VPC CREATION
 - 1-
-![VPCCreated](VPCCreated.PNG)
+![VPCCreated](images/VPCCreated.PNG)
 - 2- 
-![subnet](subNetCreate.png)
+![subnet](images/subNetCreate.png)
 - 3-
-![Gw](GW.png)
+![Gw](images/GW.png)
 - 4-
-![RT](RT.png)
+![RT](images/RT.png)
 - 5-
-![SG](SG.png)
+![SG](images/SG.png)
