@@ -4,7 +4,7 @@
 - 1-
 ![VPCCreated](images/VPCCreated.PNG)
 - 2- 
-![subnet](images/subNetCreate.png)
+![subnet](images/subnet.png)
 - 3-
 ![Gw](images/GW.png)
 - 4-
