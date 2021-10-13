@@ -8,9 +8,11 @@
 - 2- Subnet
     - THe subnet is what gives the range of IP address that are allowed to be used on this VPC
 ![subnet](images/subnet.png)
-- 3-
+- 3-Internet Gateway
+    - the internet gateway is what allows this VPS to be connected to the internet
 ![Gw](images/GW.png)
-- 4-
+- 4- Route Table
+    - the route table is 
 ![RT](images/RT.png)
 - 5-
 ![SG](images/SG.png)
