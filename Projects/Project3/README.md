@@ -22,3 +22,6 @@
 - to reserve an elastic IP address, I selected the elastic-IP tab from the menu on the left hand side of the screen, then clicked the Allocate elastic IP address. Left everything as the default and added the tag BOWEN-e-ip. then selected allocate. 
 - screen shot of my instance:
 ![instance](images/instance.png)
+- to change my host name I used sudo hostnamectl BOWEN-AMI to change the host name for this instance. 
+- screenshot of my SSH connection:
+![SSH](images/SSH.png)
