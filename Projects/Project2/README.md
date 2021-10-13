@@ -4,6 +4,7 @@
 - the bot that I made takes a command (red!) and give you a random quote from the beloved series that is Red vs. Blue. If you haven't seen Red vs. Blue you shoud get on youTube and watch all of it as soon as possible.
 - I modified the original code that was provided for us by changing the quotes from The Hitchhikers Guide to the Galaxy quotes, to quotes from Red vs. Blue.
 - I also changed the message phrase that triggers the bot to give you a quote from towel! to red!.
+- I modified the original bot.py file on my AWS system by first cloning the repo that the file was is to my AWS system. I then created a new brnach and called it work by using git brnach work, to create the new branch. I then used git checkout work to change to the new branch, and changed the quotes and the target work for the code. after I confirmed that the code worked I performed a git add git commit and git push, which told github that the new brach exists.
 
 ## DISCORD API KEY
 - to create your Discord bot follow the guide from this link:  https://realpython.com/how-to-make-a-discord-bot-python/
