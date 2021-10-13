@@ -4,7 +4,7 @@
 - 1-VPC
     - A VPC is a virtual private cloud, this allows us to create a cloud based service to run in our AWS instances. Or as it was described to us in class as a box that holds everything from the subnet, the internet gateway, the routing table, and the security group. everything that you need to operate a cloud based service.
 - screenshot of my VPC creation: 
-![VPCCreated](images/VPCCreated.PNG)
+![VPCcreated](images/VPCCreated.png)
 - 2- Subnet
     - THe subnet is what gives the range of IP address that are allowed to be used on this VPC
 ![subnet](images/subnet.png)
