@@ -24,4 +24,4 @@
 ![instance](images/instance.png)
 - to change my host name I used sudo hostnamectl BOWEN-AMI to change the host name for this instance. 
 - screenshot of my SSH connection:
-![SSH](images/SSH.png)
+- ![SSH](images/SSH.png)
