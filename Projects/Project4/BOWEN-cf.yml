@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-  Bowen CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
+  Bowen-CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -125,10 +125,10 @@ Resources:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
+            sudo hostname BOWEN-AMI
             apt-get update && \
             apt-get install -y \
               git \
               python3 \
               pip3 && \
-            sudo hostnamectl BOWEN-AMI && \
             reboot
