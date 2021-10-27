@@ -86,7 +86,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 76.92.30.159/32 #HOME CIDR
+          CidrIp: 76.92.30.159/32 #HOME
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
@@ -94,7 +94,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 10.0.0.0/24 #VPC INSTANCE
+          CidrIp: 10.0.0.0/24 #VPC
   PublicUbuntuInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
