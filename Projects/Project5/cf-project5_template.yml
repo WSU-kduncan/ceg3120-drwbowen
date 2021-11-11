@@ -143,7 +143,7 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             # need to install haproxy
-            apt-get install -y git python3 python3-pip && \
+            apt-get install -y git python3 python3-pip haproxy && \
             hostnamectl set-hostname proxy && \
             reboot
   WebServ1Instance:
@@ -178,6 +178,6 @@ Resources:
             #!/bin/bash -xe
             apt-get update && \
             # need to install apache or nginx
-            apt-get install -y git && \
-            # give it a hostname - hostnamectl  && \
+            apt-get install -y git apache && \
+            hostnamectl set-hostname proxy1 && \
             reboot
