@@ -105,7 +105,7 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: 76.92.30.159/32 #HOME
-        - IpProtocol: tcp
+        - IpProtocol: http
           FromPort: '80'
           ToPort: '80'
           CidrIp: 0.0.0.0/0
