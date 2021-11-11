@@ -185,7 +185,7 @@ Resources:
             apt-get install -y git apache && \
             hostnamectl set-hostname webserv1 && \
             reboot
-  WebServ1Instance:
+  WebServ2Instance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
     Properties:
@@ -210,7 +210,7 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.27 # make sure unique to the instance
+          PrivateIpAddress: 10.0.0.27
       UserData:
         Fn::Base64:
           !Sub |
