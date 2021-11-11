@@ -109,6 +109,10 @@ Resources:
           FromPort: '80'
           ToPort: '80'
           CidrIp: 0.0.0.0/0
+        - IpProtocol: http
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 10.0.0.0/16
           # Need more rules for port 80
   # This defines one instance.  Make two more instances based on this (but no elastic IP)        
   PublicUbuntuInstance:
@@ -179,5 +183,40 @@ Resources:
             apt-get update && \
             # need to install apache or nginx
             apt-get install -y git apache && \
-            hostnamectl set-hostname proxy1 && \
+            hostnamectl set-hostname webserv1 && \
+            reboot
+  WebServ1Instance:
+    Type: 'AWS::EC2::Instance'
+    DependsOn: AttachGateway
+    Properties:
+      ImageId: !FindInMap 
+        - AWSRegionUbuntu
+        - !Ref 'AWS::Region'
+        - !FindInMap 
+          - AWSInstanceType2Arch
+          - t2.micro
+          - Arch
+      InstanceType: t2.micro
+      KeyName: !Ref KeyName
+      Tags:
+        - Key: Application
+          Value: !Ref 'AWS::StackId'
+        - Key: Name
+          Value: webserv2
+      NetworkInterfaces:
+        - GroupSet:
+            - !Ref Lab1SecurityGroup
+          AssociatePublicIpAddress: 'true'
+          DeviceIndex: '0'
+          DeleteOnTermination: 'true'
+          SubnetId: !Ref Subnet
+          PrivateIpAddress: 10.0.0.27 # make sure unique to the instance
+      UserData:
+        Fn::Base64:
+          !Sub |
+            #!/bin/bash -xe
+            apt-get update && \
+            # need to install apache or nginx
+            apt-get install -y git nginx && \
+            hostnamectl set-hostname webserv2 && \
             reboot
