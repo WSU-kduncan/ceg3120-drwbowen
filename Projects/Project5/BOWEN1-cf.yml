@@ -222,7 +222,6 @@ Resources:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
-            # need to install apache or nginx
             apt-get install -y git nginx && \
             hostnamectl set-hostname webserv2 && \
             reboot
