@@ -14,3 +14,7 @@
 - the only file that I modified on the webserver systems was the index.html file, which is located at /var/www/html/index.html, on both of the web server systems.
 - to restart the apache2 services you do basically the same thing that I did with haproxy, which is used the sudo systemctl restart apache2 command. 
 - the only resource I used other than examples provided in lecture was [How to restart Apache on Ubuntu 20.04 Focal Fossa](https://linuxconfig.org/how-to-restart-apache-on-ubuntu-20-04-focal-fossa)
+- screenshot of server1:
+![server1](images/server1.png)
+- screenshot of server2:
+![server2](images/server2.png)
