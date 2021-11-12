@@ -12,6 +12,7 @@
 ## WEB SERVER CONFIGURATION
 - to install apache2 on each of the web server systems, I added the line "apt-get install -y git apache2 && \" to each of the instance creation, telling aws to preinstall these packages on the instances when it creates them. I then again ssh into each instance and perform apache2 -v to insure that the package was installed, and what version was installed.
 - the only file that I modified on the webserver systems was the index.html file, which is located at /var/www/html/index.html, on both of the web server systems.
+- I did not have to mess with any other configurations for the web servers
 - to restart the apache2 services you do basically the same thing that I did with haproxy, which is used the sudo systemctl restart apache2 command. 
 - the only resource I used other than examples provided in lecture was [How to restart Apache on Ubuntu 20.04 Focal Fossa](https://linuxconfig.org/how-to-restart-apache-on-ubuntu-20-04-focal-fossa)
 - screenshot of server1:
