@@ -11,3 +11,5 @@
 - the only resource I used in setting up the proxy other than examples provided in class was [The Four Essential Sections of an HAProxy Configuration](https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration/)
 ## WEB SERVER CONFIGURATION
 - to install apache2 on each of the web server systems, I added the line "apt-get install -y git apache2 && \" to each of the instance creation, telling aws to preinstall these packages on the instances when it creates them. I then again ssh into each instance and perform apache2 -v to insure that the package was installed, and what version was installed.
+- the only file that I modified on the webserver systems was the index.html file, which is located at /var/www/html/index.html, on both of the web server systems.
+- to restart the apache2 services you do basically the same thing that I did with haproxy, which is used the sudo systemctl restart apache2 command. 
